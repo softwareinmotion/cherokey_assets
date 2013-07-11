@@ -1,0 +1,48 @@
+table {
+    width: auto;
+    padding: 0;
+    text-align: center;
+    border-collapse: collapse;
+}
+tbody tr:first-of-type, tbody tr:first-of-type td {
+  border-top: none;
+}
+
+td {
+  border: 1px solid #C8C9CA;
+
+  &:first-of-type {
+    border-left: none;
+  }
+  &:last-of-type {
+    border-right: none;
+  }
+}
+tfoot {
+  tr, td {
+    border-bottom: none;
+  }
+}
+th,td {
+  text-align: center;
+  padding: 2px 10px 3px;
+}
+thead {
+  tr {
+    background-image: image-url("cherokey-gray-header-background.svg");
+    background-size: 100% 100%;
+    border: none;
+
+    th:first-of-type {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+    th:last-of-type {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+}
+tr {
+  height: 30px;
+}
