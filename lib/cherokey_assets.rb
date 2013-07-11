@@ -1,4 +1,5 @@
 require "cherokey_assets/version"
+require "normalize-rails"
 
 module CherokeyAssets
   module Rails
