@@ -1,0 +1,32 @@
+$default-font: 'Segore UI','Trebuchet MS', sans-serif;
+$link_color: #3d8929;
+
+html,
+body {
+  font-family: $default-font;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10pt;
+  text-align: center;
+  line-height: 1.4;
+  color: rgb(80,80,80);
+}
+
+
+a, 
+a:link,
+a:visited,
+a:hover {
+  color: $link_color;
+  line-height: 1.4;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:visited,
+  &:link {
+    text-decoration: none;
+  }
+}
+  
