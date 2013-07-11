@@ -1,6 +1,10 @@
 # CherokeyAssets
 
-TODO: Write a gem description
+This Gem contains some branding assets usable for projects within Cherokey product line.
+The purpose for this publicly available code is be an example how to extract
+branding assets into a gem. 
+
+The assets are under copyright (c) softwareinmotion gmbh, all rights reserved.
 
 ## Installation
 
@@ -16,14 +20,3 @@ Or install it yourself as:
 
     $ gem install cherokey_assets
 
-## Usage
-
-TODO: Write usage instructions here
-
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
