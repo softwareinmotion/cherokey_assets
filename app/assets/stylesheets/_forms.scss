@@ -1,32 +1,51 @@
-input {
+input, textarea, select {
   display: inline-block;
-  border: 1px solid #97989C;
+  border: .1em solid #97989C;
   border-radius: 3px;
   box-shadow: inset 0 0 1px #999;
-  width: 15em;
-  padding: 2px;
+  width: 12em;
+  padding: .1em;
 
   &[type=submit], &[type=reset]{
-    position: relative;
-    left: 4px;
+    width: 12.2em;
     background-image: image-url("button_bg.png");
   }
+
   &[type=image], &[type=checkbox] {
     border: none;
     width: auto;
     height: auto;
   }
+
   &[type=image] {
     border: none;
     box-shadow: none;
   }
-  &[type=text] {
-    height: auto;
-  }
+
+  &[type=text] { height: auto; }
 }
+
 label {
   display: inline-block;
-  width: 8em;
+  width: 10.5em;
   text-align: right;
-  margin-right: 1em;
+}
+
+label ~ input,
+label ~ textarea,
+label ~ select,
+label ~ .fixed-field-value,
+input[type=checkbox] ~ label {
+  margin-left: 1em;
+}
+
+textarea {
+  height: 10ex;
+}
+
+div.field {
+  width: 25.8em;
+  margin-bottom: .5em;
+  margin-left: auto;
+  margin-right: auto;
 }
