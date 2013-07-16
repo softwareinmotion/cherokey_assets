@@ -1,0 +1,10 @@
+nav#login a {
+  &:after {
+    content: ' | ';
+    color: rgb(80,80,80);
+  }
+
+  &:last-of-type:after {
+    content: '';
+  }
+}
