@@ -3,7 +3,9 @@
     <%= link_to image_tag('cherokey-logo-222x60.png'), site_header['logo_link'], id: 'logo' %>
     <% if site_header['display_name'] %>
 
-      <%= image_tag "#{site_header['variant']['id']}.png", title: site_header['variant']['title'], class: 'variant' %>
+      <% if site_header['variant'] %>
+        <%= image_tag "cherokey-variant-#{site_header['variant']['id']}.png", title: site_header['variant']['title'], class: 'variant' %>
+      <% end %>
 
       <nav id="login">
         <%= "#{t('sessions.logged_in_as')}: #{site_header['display_name']}" %>
