@@ -1,0 +1,25 @@
+<header>
+  <section>
+    <%= link_to image_tag('logo.png'), site_header['logo_link'], id: 'logo' %>
+    <% if site_header['display_name'] %>
+
+      <%= image_tag "#{site_header['variant']['id']}.png", title: site_header['variant']['title'], class: 'variant' %>
+
+      <nav id="login">
+        <%= "#{t('sessions.logged_in_as')}: #{site_header['display_name']}" %>
+        <br/>
+        <% site_header['user_menu'].each do |menu_item| %>
+          <%= link_to menu_item['text'], menu_item['url'], menu_item.fetch('options', {}) %>
+        <% end %>
+      </nav>
+    <% end %>
+    <% if site_header['eject_link'] %>
+      <%= link_to image_tag('eject_btn.svg', :title => t('back')), site_header['eject_link'], :class => 'back_button' %>
+    <% end %>
+  </section>
+  <% if site_header['instance_expiration']%>
+    <p class="instance_expiration_date">
+      <%= site_header['instance_expiration'] %>
+    </p>
+  <% end %>
+</header>
