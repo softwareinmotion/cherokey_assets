@@ -34,6 +34,7 @@ label {
 label ~ input,
 label ~ textarea,
 label ~ select,
+label + span,
 label ~ .fixed-field-value,
 input[type=checkbox] ~ label {
   margin-left: 1em;
