@@ -11,7 +11,7 @@ input, textarea, select {
     background-image: image-url("cherokey-button-bg.png");
   }
 
-  &[type=image], &[type=checkbox] {
+  &[type=image], &[type=checkbox], &[type=radio] {
     border: none;
     width: auto;
     height: auto;
@@ -31,12 +31,18 @@ label {
   text-align: right;
 }
 
+input[type=checkbox] + label,
+input[type=radio] + label {
+  text-align: left;
+}
+
 label ~ input,
 label ~ textarea,
 label ~ select,
 label + span,
 label ~ .fixed-field-value,
-input[type=checkbox] ~ label {
+input[type=checkbox] ~ label,
+input[type=radio] ~ label {
   margin-left: 1em;
 }
 
