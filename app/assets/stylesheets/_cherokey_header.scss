@@ -8,3 +8,7 @@ nav#login a {
     content: '';
   }
 }
+
+nav.header {
+  @include gray-header-bg;
+}
