@@ -1,10 +1,23 @@
-nav#login a {
-  &:after {
-    content: ' | ';
-    color: rgb(80,80,80);
-  }
+nav#login {
+  float: right;
+  text-align: right;
+  margin-top: 15px;
 
-  &:last-of-type:after {
-    content: '';
+  a {
+    &:after {
+      content: ' | ';
+      color: rgb(80,80,80);
+    }
+
+    &:last-of-type:after {
+      content: '';
+    }
+  }
+}
+a#logo {
+  float: left;
+
+  img {
+    height: 60px;
   }
 }
