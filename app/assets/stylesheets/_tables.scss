@@ -3,6 +3,11 @@ table {
     padding: 0;
     text-align: center;
     border-collapse: collapse;
+  .tools {
+    width: 50px;
+    max-width: 50px;
+    padding: 0px;
+  }
 }
 tbody tr:first-of-type, tbody tr:first-of-type td {
   border-top: none;
@@ -16,6 +21,15 @@ td {
   }
   &:last-of-type {
     border-right: none;
+  }
+
+  .tools {
+    text-align: right;
+    padding-top: 5px;
+
+    input {
+      padding: 0;
+    }
   }
 }
 tfoot {
@@ -45,4 +59,13 @@ thead {
 }
 tr {
   height: 30px;
+
+  td.tools * {
+    display: none;
+  }
 }
+
+tr:hover td.tools * {
+  display: inline-block;
+}
+
