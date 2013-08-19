@@ -36,3 +36,19 @@ nav.header {
   @include gray-header-bg;
   padding: 10px 10px 5px 10px;
 }
+
+@media handheld, screen and (max-device-width: 480px) {
+  .mobile-ready {
+    .site-header > section {
+      width: auto;
+    }
+
+    body {
+      section {
+        width: auto;
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+    }
+  }
+}

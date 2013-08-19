@@ -56,3 +56,33 @@ div.field {
   margin-left: auto;
   margin-right: auto;
 }
+@media handheld, screen and (max-device-width: 480px) {
+  .mobile-ready {
+    label {
+      display: block;
+      text-align: left;
+      width: 100%;
+    }
+
+    input,
+    input[type=submit], input[type=reset]{
+      box-sizing: border-box;
+      width: 100%;
+      margin-bottom: 1em;
+    }
+
+    div.field {
+      width: auto;
+    }
+
+    label ~ input,
+    label ~ textarea,
+    label ~ select,
+    label + span,
+    label ~ .fixed-field-value,
+    input[type=checkbox] ~ label,
+    input[type=radio] ~ label {
+      margin-left: 0;
+    }
+  }
+}
