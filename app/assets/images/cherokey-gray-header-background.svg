@@ -7,57 +7,53 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   preserveAspectRatio="none"
-   width="287.16"
-   height="109.38"
-   id="svg3062"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="background.svg">
+   width="287"
+   height="109"
+   id="svg3062">
   <defs
      id="defs3064">
     <linearGradient
-       id="SVGID_1_"
-       gradientUnits="userSpaceOnUse"
        x1="143.57671"
        y1="0"
        x2="143.57671"
        y2="58.160198"
-       gradientTransform="matrix(1.0062431,0,0,1,-1.0714285,943.38894)">
+       id="SVGID_1_"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.2761341,0,0,1,-39.722854,943.36218)">
       <stop
-         offset="0"
-         style="stop-color:#FEFEFE;stop-opacity:0"
-         id="stop3007" />
+         id="stop3007"
+         style="stop-color:#fefefe;stop-opacity:0"
+         offset="0" />
       <stop
-         offset="0.9104"
-         style="stop-color:#FEFEFE;stop-opacity:0.4552"
-         id="stop3009" />
+         id="stop3009"
+         style="stop-color:#fefefe;stop-opacity:0.45519999"
+         offset="0.91039997" />
       <stop
-         offset="1"
-         style="stop-color:#FEFEFE;stop-opacity:0.5"
-         id="stop3011" />
+         id="stop3011"
+         style="stop-color:#fefefe;stop-opacity:0.5"
+         offset="1" />
     </linearGradient>
+    <linearGradient
+       x1="143.57671"
+       y1="0"
+       x2="143.57671"
+       y2="58.160198"
+       id="linearGradient2994"
+       xlink:href="#SVGID_1_"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.2761341,0,0,1,-39.722854,943.36218)" />
+    <linearGradient
+       x1="143.57671"
+       y1="0"
+       x2="143.57671"
+       y2="58.160198"
+       id="linearGradient2997"
+       xlink:href="#SVGID_1_"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.2761341,0,0,1,-39.722854,0)" />
   </defs>
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="164.46367"
-     inkscape:cy="35.922893"
-     inkscape:document-units="px"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     inkscape:window-width="1600"
-     inkscape:window-height="838"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
   <metadata
      id="metadata3067">
     <rdf:RDF>
@@ -66,24 +62,22 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Ebene 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(0,-942.98218)">
+     transform="translate(0,-943.36218)"
+     id="layer1">
     <path
-       style="fill:#e9e9e9"
-       inkscape:connector-curvature="0"
-       d="m 290.36221,1057.7826 c 0,9.8512 -5.58684,17.8383 -12.4776,17.8383 H 4.2582388 c -6.8907527,0 -12.4775958,-7.9871 -12.4775958,-17.8383 V 930.87017 c 0,-9.85124 5.5868431,-17.83837 12.4775958,-17.83837 H 277.88461 c 6.89076,0 12.4776,7.98713 12.4776,17.83837 v 126.91243 z"
-       id="path3004" />
+       d="M 0,0 0,109 287,109 287,0 0,0 z"
+       transform="translate(0,943.36218)"
+       id="path3004"
+       style="fill:#e9e9e9" />
     <path
-       style="fill:url(#SVGID_1_)"
-       inkscape:connector-curvature="0"
-       d="m 287.87428,995.16794 c 0,3.524 -5.40654,6.38096 -12.07491,6.38096 H 11.003489 c -6.6683736,0 -12.0749175,-2.85696 -12.0749175,-6.38096 v -45.398 c 0,-3.524 5.4065439,-6.381 12.0749175,-6.381 H 275.79937 c 6.66837,0 12.07491,2.857 12.07491,6.381 v 45.398 z"
-       id="path3013" />
+       d="m 0,0 0,58.15625 287,0 L 287,0 0,0 z"
+       transform="translate(0,943.36218)"
+       id="path3013"
+       style="fill:url(#linearGradient2997)" />
   </g>
 </svg>
