@@ -1,5 +1,5 @@
 @mixin gray-header-bg($radius: 10px) {
     background-image: image-url("cherokey-gray-header-background.svg");
     border-radius: $radius;
-    background-size: 100% 100%;
+    background-size: auto 100%;
 }
