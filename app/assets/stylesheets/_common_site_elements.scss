@@ -3,6 +3,33 @@ footer {
   margin-top: 3ex;
   margin-bottom: 1ex;
   text-align: center;
+
+  ul#module_navigation {
+    clear: both;
+    display: block;
+    margin: 0 auto;
+
+    li {
+      margin: 0 1px;
+    }
+
+    li.selected > a > img  {
+      border: 2px solid rgb(91,168,79);
+      border-radius: 5px;
+    }
+
+    li.module {
+      display: inline-block;
+      text-align: center;
+      background-image: none;
+
+      img {
+        width: 40px;
+        border: 1px solid #C0C0C0;
+        border-radius: 5px;
+      }
+    }
+  }
 }
 
 .site-footer {
