@@ -55,3 +55,27 @@ footer {
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
 }
+
+.flash_message {
+  padding: 5px;
+  font-size: 90%;
+  background-repeat: repeat-x;
+  background-size: contain;
+  border-radius: 5px;
+  text-align: center;
+}
+
+div#flasherror {
+  @extend .flash_message;
+  background-image: image-url('cherokey-error-msg.png');
+}
+
+div#flashnotice {
+  @extend .flash_message;
+  background-image: image-url('cherokey-success-msg.png');
+}
+
+div#flashwarning {
+  @extend .flash_message;
+  background-image: url('cherokey-flashwarning.png');
+}
