@@ -92,3 +92,9 @@ div#flashwarning {
   @extend .flash_message;
   background-image: url('cherokey-flashwarning.png');
 }
+
+.navigation_tiles {
+  margin: 30px auto;
+  width: 640px;
+  clear: both;
+}

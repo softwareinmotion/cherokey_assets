@@ -25,3 +25,23 @@
     </p>
   <% end %>
 </header>
+<% if mobile_site_header %>
+  <header class="mobile-site-header only_mobile clear_floats">
+    <% if mobile_site_header['left'] && mobile_site_header['center'] && mobile_site_header['right'] %>
+      <% if mobile_site_header['left']['text'] %>
+        <%= link_to mobile_site_header['left']['text'], mobile_site_header['left']['url'], class: "third #{mobile_site_header['left']['class']}" %>
+      <% else %>
+        <div class="third" >
+          <%= mobile_site_header['left'] %>
+        </div>
+      <% end %>
+      <%= link_to image_tag('cherokey-logo-40px@2x.png', :title => t('back'), :class => 'logo'), mobile_site_header['center'], class: 'third center'  %>
+      <% unless mobile_site_header['right']['url'].nil? %>
+        <%= link_to mobile_site_header['right']['text'], mobile_site_header['right']['url'], class: "third right #{mobile_site_header['right']['class']}" %>
+      <% end %>
+    <% else %>
+      <%= link_to image_tag('cherokey-logo-222x60.png'), mobile_site_header['left'], id: 'logo', class: 'half'  %>
+      <%= link_to mobile_site_header['right']['text'], mobile_site_header['right']['url'], target: '_blank', method: 'delete', class: 'half right' %>
+    <% end %>
+  </header>
+<% end %>

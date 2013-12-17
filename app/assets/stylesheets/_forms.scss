@@ -56,7 +56,7 @@ div.field {
   margin-left: auto;
   margin-right: auto;
 }
-@media handheld, screen and (max-device-width: 480px) {
+@media screen and (max-width: 480px) {
   .mobile-ready {
     label {
       display: block;
@@ -71,7 +71,7 @@ div.field {
       margin-bottom: 1em;
     }
 
-    div.field {
+    div.field, input[type=radio], input[type=checkbox] {
       width: auto;
     }
 
