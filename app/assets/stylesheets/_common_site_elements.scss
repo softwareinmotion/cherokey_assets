@@ -31,7 +31,7 @@ footer {
     }
   }
 }
-.clear_floats {
+.clear_floats, .clear-floats {
   zoom: 1; /* IE 6 & 7 */
 
   &:before,
@@ -93,7 +93,7 @@ div#flashwarning {
   background-image: url('cherokey-flashwarning.png');
 }
 
-.navigation_tiles {
+.navigation_tiles, .navigation-tiles {
   margin: 30px auto;
   width: 640px;
   clear: both;
