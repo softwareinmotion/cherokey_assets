@@ -6,10 +6,12 @@ require 'cherokey_assets/version'
 Gem::Specification.new do |gem|
   gem.name          = "cherokey_assets"
   gem.version       = CherokeyAssets::VERSION
-  gem.authors       = [ "Markus Saradjuk", 
-                        "Julien Gantner"]
+  gem.authors       = [ "Markus Saradjuk",
+                        "Julien Gantner",
+                        "Sabrina Lang"]
   gem.email         = [ "Markus.Saradjuk@softwareinmotion.de",
-                        "julien.gantner@softwareinmotion.de"]
+                        "julien.gantner@softwareinmotion.de",
+                        "sabrina.lang@softwareinmotion.de"]
   gem.description   = %q{Styles for CheroKey}
   gem.summary       = %q{Styles for CheroKey}
   gem.homepage      = "https://github.com/softwareinmotion/cherokey_assets"
