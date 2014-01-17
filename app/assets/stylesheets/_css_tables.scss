@@ -70,6 +70,14 @@ $border-color: #c8c9ca;
   &:first-of-type {
     border-left: none;
   }
+
+  .field_with_errors {
+    display: block;
+
+    input {
+      margin: 0;
+    }
+  }
 }
 form {
   .td {
