@@ -1,0 +1,39 @@
+div.search-bar {
+  height: 20px;
+  float: right;
+  padding: 1px;
+  border: 1px solid #97989C;
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: 0 0 1px #999999 inset;
+  background-color: #FFF;
+  margin-top: 8px;
+
+  .search-field {
+    float: left;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    margin-top: 2px;
+    height: 14px;
+    font-size: 80%;
+  }
+
+  .search-button, .reset-button {
+    float: right;
+    position: relative;
+    top: 2px;
+    width: 17px;
+    height: 13px;
+  }
+
+  .reset-button-hidden {
+    visibility: hidden;
+  }
+
+  select#category {
+    height: 20px;
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+}
