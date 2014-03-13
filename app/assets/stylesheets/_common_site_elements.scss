@@ -142,7 +142,7 @@ div#flashwarning {
   }
 }
 %layout-box {
-  @include box-sizing('border-box')
+  @include box-sizing('border-box');
   float: left;
 }
 .half {
