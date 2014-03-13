@@ -20,4 +20,5 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.add_dependency "railties", ">= 3.0", "< 5.0"
   gem.add_dependency "normalize-rails", "~> 2.1.1"
+  gem.add_dependency "compass-rails", "~> 1.1.6"
 end

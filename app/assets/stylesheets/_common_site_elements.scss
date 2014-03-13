@@ -1,3 +1,5 @@
+@import "compass/css3/box-sizing";
+
 footer {
   clear: both;
   margin-top: 3ex;
@@ -138,4 +140,24 @@ div#flashwarning {
     border-color: #f00;
     margin-left: 1em
   }
+}
+%layout-box {
+  @include box-sizing('border-box')
+  float: left;
+}
+.half {
+  @extend %layout-box;
+  width: percentage(1/2);
+}
+.third {
+  @extend %layout-box;
+  width: percentage(1/3);
+}
+.quarter {
+  @extend %layout-box;
+  width: percentage(1/4);
+}
+.three-quarters {
+  @extend %layout-box;
+  width: percentage(3/4);
 }
