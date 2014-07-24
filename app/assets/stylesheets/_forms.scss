@@ -70,6 +70,17 @@ div.field {
   }
 }
 
+.link_button {
+  background-color: transparent;
+  border: none;
+  padding: 0, 0, 25px, 0;
+  text-align: left;
+  color: #3d8929;
+  outline: none;
+  outline-offset: 0;
+  box-shadow: none;
+}
+
 @media screen and (max-width: 480px) {
   .mobile-ready {
     label {
