@@ -3,7 +3,6 @@
   <section>
     <%= link_to image_tag('cherokey-logo-222x60.png'), site_header['logo_link'], id: 'logo' %>
     <% if site_header['display_name'] %>
-
       <% if site_header['variant'] %>
         <%= image_tag "cherokey-variant-#{site_header['variant']['id']}.png", title: site_header['variant']['title'], class: 'variant' %>
       <% end %>
@@ -16,16 +15,23 @@
         <% end %>
       </nav>
     <% end %>
+
     <% if site_header['eject_link'] %>
       <%= link_to image_tag('cherokey-eject-btn.svg', :title => t('back')), site_header['eject_link'], :class => 'back_button' %>
+    <% elsif site_header['call-action'] %>
+      <div class="call-action">
+        <%= link_to t('offer'), 'https://cherokey.de/de/angebot' %>
+      </div>
     <% end %>
   </section>
+
   <% if site_header['instance_expiration']%>
     <p class="instance_expiration_date">
       <%= site_header['instance_expiration'] %>
     </p>
   <% end %>
 </header>
+
 <% if mobile_site_header %>
   <header class="mobile-site-header only_mobile clear_floats">
     <% if mobile_site_header['left'] && mobile_site_header['center'] && mobile_site_header['right'] %>
