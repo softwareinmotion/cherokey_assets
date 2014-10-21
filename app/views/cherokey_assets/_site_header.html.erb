@@ -48,7 +48,9 @@
       <% end %>
     <% else %>
       <%= link_to image_tag('cherokey-logo-222x60.png'), mobile_site_header['left'], id: 'logo', class: 'half'  %>
-      <%= link_to mobile_site_header['right']['text'], mobile_site_header['right']['url'], target: '_blank', method: 'delete', class: 'half right' %>
+      <% unless mobile_site_header['right'].nil? %>
+        <%= link_to mobile_site_header['right']['text'], mobile_site_header['right']['url'], method: 'delete', class: 'half right' %>
+      <% end %>
     <% end %>
   </header>
 <% end %>
