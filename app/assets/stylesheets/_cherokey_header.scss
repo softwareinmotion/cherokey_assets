@@ -46,6 +46,8 @@ nav.header {
 }
 
 .call-action {
+  position: relative;
+  z-index: 51;
   display: block;
   margin-left: auto;
   margin-right: auto;
