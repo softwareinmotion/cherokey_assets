@@ -72,27 +72,44 @@ footer {
 }
 
 .flash_message {
-  padding: 5px;
-  font-size: 90%;
-  background-repeat: repeat-x;
-  background-size: contain;
-  border-radius: 5px;
-  text-align: center;
+  padding: 15px;
+  border-radius: .25rem;
+  text-align: left;
+  border: 1px solid transparent;
+  margin-bottom: 5px;
+
+  .dismiss-flash {
+    position: relative;
+    float: right;
+    top: 1px;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  .dismiss-flash:hover {
+    opacity: 1;
+  }
 }
 
 div#flasherror {
   @extend .flash_message;
-  background-image: image-url('cherokey-error-msg.png');
+  color: #A94443;
+  background-color: #f2dede;
+  border-color: #ebcccc;
 }
 
 div#flashnotice {
   @extend .flash_message;
-  background-image: image-url('cherokey-success-msg.png');
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d0e9c6;
 }
 
 div#flashwarning {
   @extend .flash_message;
-  background-image: url('cherokey-flashwarning.png');
+  color: #317096;
+  background-color: #d9edf7;
+  border-color: #bcdff1;
 }
 
 .navigation_tiles, .navigation-tiles {
